@@ -7,12 +7,22 @@ body{background-color: #5D2A42;
 #textomedio {text-align: center;}
 #textoleft {text-align: left;}
 /* Clases */ 
+.marquee{background-color: orange; 
+    width: 80%; 
+    margin-left: 10%; 
+    margin-right: 10%;  
+    padding-left: 4%; 
+    padding-top: 1%; 
+    padding-bottom: 1%; 
+    padding-right: 4%;
+
+}
 .boxinfo{ background-color: #FB6376; 
     width: 80%; 
     margin-left: 10%; 
     margin-right: 10%;  
     padding-left: 4%; 
-    padding-top: 2%; 
+    padding-top: 1%; 
     padding-bottom: 2%; 
     padding-right: 4%;
 }
@@ -91,7 +101,7 @@ body{background-color: #5D2A42;
     margin-right: 10%;
 }
 .link{
-    color: white;
+    color: brown;
 }
 .link:hover{  /* Permite cambiar el color del link al pasar el mouse por encima */ 
     color: red;
