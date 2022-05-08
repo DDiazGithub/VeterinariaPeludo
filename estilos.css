@@ -7,13 +7,13 @@ body{background-color: #5D2A42;
 #textomedio {text-align: center;}
 #textoleft {text-align: left;}
 /* Clases */ 
-.marquee{background-color: orange; 
+.marcas{background-color: orangered; 
     width: 80%; 
     margin-left: 10%; 
     margin-right: 10%;  
     padding-left: 4%; 
-    padding-top: 1%; 
-    padding-bottom: 1%; 
+    padding-top: 2%; 
+    padding-bottom: 2%; 
     padding-right: 4%;
 
 }
@@ -87,7 +87,8 @@ body{background-color: #5D2A42;
 }
 .contacto1 { 
     background-color: turquoise;
-    margin-top: 2%;
+    margin-top: 4%;
+    margin-bottom: 4%;
     border: 0.3cm; 
     border-style: outset;
     border-color: aqua;
