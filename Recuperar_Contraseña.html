@@ -10,15 +10,38 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="estilos.css">
-  </head>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+          $("error").hide();
+          $("#formulario").submit(function(){
+              var mensaje ="";
+              if($("#correo").val().trim().length==0){
+                  mensaje = "El NOMBRE ESTA EN BLANCO";
+              }
+              if($("#email").val().trim().length==0){
+                  mensaje = "El email ESTA EN BLANCO";
+              }
+              if(mensaje !="")
+              {
+                  $("#error").html(mensaje);
+                  $("#error").show();
+                  event.preventDefault();
+              }
+
+              });
+          })
+        </script>
+
+</head>
   <body>
     <section class="form-register">
-      <h4>Recuperar Contraseña</h4>
-      <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su Correo">
-      <input class="botons" type="submit" value="Enviar">
-
-
-
+        <form>
+          <h4>Recuperar Contraseña</h4>
+          <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su Correo">
+          <input class="botons" type="submit" value="Enviar">
+          <div id="error" class="alert alert-danger" role="alert"></div>
+        </form>
     </section>
 
     <!-- Optional JavaScript -->

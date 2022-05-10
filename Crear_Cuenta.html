@@ -15,37 +15,21 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
   integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
   crossorigin="anonymous"></script>
-  <script>
-    $(document).ready(() => {
-      $(".error").hide();
-      $("#frmdatos").submit(funcion(evento){
-        let nombre = $ ("#nombre).val().trim();
 
-        if (nombre.length < 3) {
-          $(".error").show();
-          return;
-        }
-
-        $("#resultado").text("Su nombre es  ${nombre}")
-        ;
-      });
-    });
-
-  </script>
 </head>
 <body>
   <form class="form-register">
     <h4>Crear Cuenta</h4>
     <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre">
-    <span class="error">el campo es obligatorio</span>
+
     <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Ingrese su Apellido">
-    <span class="error">el campo es obligatorio</span>
+
     <input class="controls" type="text" name="rut" id="rut" placeholder="Ingrese su Rut">
-    <span class="error">el campo es obligatorio</span>
+
     <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su Correo">
-    <span class="error">el campo es obligatorio</span>
+
     <input class="controls" type="password" name="correo" id="correo" placeholder="Ingrese su Contraseña">
-    <span class="error">el campo es obligatorio</span>
+
     <input class="controls" type="reset"  value="Borrar todo">
 
     <p>Estoy de acuerdo con <a href="#">Terminos y Condiciones</a></p>
