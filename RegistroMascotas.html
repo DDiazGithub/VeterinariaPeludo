@@ -23,20 +23,20 @@
           $("#formulario").submit(function(){
               var mensaje ="";
               if($("#nombre").val().trim().length==0){
-                  alert("El campo Nombre no puede estar vacío.");
                   mensaje = "El NOMBRE ESTA EN BLANCO";
               }
               if($("#email").val().trim().length==0){
                   mensaje = "El email ESTA EN BLANCO";
-              }
-              if($("#color").val().trim().length==0){
-                  mensaje = "El Pelaje ESTA EN BLANCO";
               }
               if(mensaje !="")
               {
                   $("#error").html(mensaje);
                   $("#error").show();
                   event.preventDefault();
+              }
+              if(mensaje =="")
+              {
+                alert("se han enviado correctamente los datos"); 
               }
           
               });
@@ -46,7 +46,7 @@
 <body>
     <div class="container">
         <div class="row">
-            <form method="post" action="procesar.php" id="formulario">
+            <form method="post" action="" id="formulario">
                 <div class="form-group">
                     <label for="nombre">Nombre:</label>
                     <input type="text" class="form-control" id="nombre" name="nombre" autofocus>
@@ -55,7 +55,7 @@
                     <label for="email">Correo Electronico:</label>
                     <input type="email" class="form-control" id="email" name="email">
                 </div>
-                <div class="datalist-wrap">
+                <div class="form'group datalist-wrap">
                     <label class="label">Color del pelaje del animal </label>
                     <input type="text" list="color" class="form-control" />
                     <datalist id="color">
@@ -66,7 +66,6 @@
                         <option value="beach"></option>
                         <option value="naranjo"></option>
                         <option value="No posee pelaje"></option>
-
                     </datalist>
                 </div>
                 <input type="submit" class="btn btn-danger" id="enviar" value="Enviar">
