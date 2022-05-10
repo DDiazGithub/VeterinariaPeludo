@@ -1,0 +1,79 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro Mascotas</title>
+    <link href="estilos.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+          $("error").hide();
+          $("#formulario").submit(function(){
+              var mensaje ="";
+              if($("#nombre").val().trim().length==0){
+                  mensaje = "El NOMBRE ESTA EN BLANCO";
+              }
+              if($("#email").val().trim().length==0){
+                  mensaje = "El email ESTA EN BLANCO";
+              }
+              if($("#color").val().trim().length==0){
+                  mensaje = "El Pelaje ESTA EN BLANCO";
+              }
+              if(mensaje !="")
+              {
+                  $("#error").html(mensaje);
+                  $("#error").show();
+                  event.preventDefault();
+              }
+          
+              });
+          })
+        </script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <form method="post" action="procesar.php" id="formulario">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" class="form-control" id="nombre" name="nombre">
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo Electronico:</label>
+                    <input type="email" class="form-control" id="email" name="email">
+                </div>
+                <div class="datalist-wrap">
+                    <label class="label">Color del pelaje del animal </label>
+                    <input type="text" list="color" class="form-control" />
+                    <datalist id="color">
+                        <option value="Gris"></option>
+                        <option value="Blanco"></option>
+                        <option value="Negro"></option>
+                        <option value="Cafe"></option>
+                        <option value="beach"></option>
+                        <option value="naranjo"></option>
+                        <option value="No posee pelaje"></option>
+
+                    </datalist>
+                </div>
+                <input type="submit" class="btn btn-danger" id="enviar" value="Enviar">
+                <input type="reset" class="btn btn-danger" id="limpiar" value="limpiar">
+                <div id="error" class="alert alert-danger" role="alert"></div>
+            </form>
+        </div>
+        
+    </div>
+</body>
+</html>
