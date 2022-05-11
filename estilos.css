@@ -6,6 +6,8 @@ body{background-color: #5D2A42;
 /* Ids*/ 
 #textomedio {text-align: center;}
 #textoleft {text-align: left;}
+#map{height: 500px;
+width: 100px;}
 /* Clases */ 
 .marcas{background-color: orangered; 
     width: 80%; 

@@ -1,5 +1,5 @@
 
-/*AVES NOMBRES Y WEAS JQUERY API*/
+/*AVES NOMBRES Y COSAS JQUERY API*/
 $.getJSON('https://aves.ninjas.cl/api/birds/76-buteo-albigula', 
     function(data) {
     var aveschilenas = data;
@@ -10,3 +10,20 @@ $.getJSON('https://aves.ninjas.cl/api/birds/76-buteo-albigula',
     }).appendTo("#aves");}).fail(function() {
     console.log('Error al consumir la API!');
 });
+
+
+
+
+
+
+function iniciarmap(){
+    var coord = {lat:-33.3601015 ,lng:-70.6783635};
+    var map = new google.maps.map(document.getElementById('map'),{
+        zoom: 10,
+        center: coord
+    })
+    var marker = new google.maps.marker({
+        position: coord,
+        map: map
+    })
+}
