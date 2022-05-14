@@ -17,7 +17,7 @@ $.getJSON('https://aves.ninjas.cl/api/birds/76-buteo-albigula',
 
 
 function iniciarmap(){
-    var coord = {lat:-33.3601015 ,lng:-70.6783635};
+    var coord = {lat:-33.4407045 ,lng:-70.6616426};
     var map = new google.maps.map(document.getElementById('map'),{
         zoom: 10,
         center: coord

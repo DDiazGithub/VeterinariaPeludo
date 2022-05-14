@@ -7,7 +7,7 @@ body{background-color: #5D2A42;
 #textomedio {text-align: center;}
 #textoleft {text-align: left;}
 #map{height: 500px;
-width: 100px;}
+width: 100%;}
 /* Clases */ 
 .marcas{background-color: orangered; 
     width: 80%; 
