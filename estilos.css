@@ -32,6 +32,7 @@ body{background-color: #607D8B ;
     padding-bottom: 2%; 
     padding-right: 4%;
     border-radius: 10px;
+    margin-bottom: 1%;
 }
 .boxinfo .row{
     margin-top: 1%; 
@@ -55,6 +56,7 @@ body{background-color: #607D8B ;
     height: 100%; 
     padding-top: 1%; 
     padding-bottom: 1%; 
+    border-radius: 250px;
 
 }
 .CuadroDobleCentrado2{
@@ -64,6 +66,7 @@ body{background-color: #607D8B ;
     padding-top: 1%;  
     padding-bottom: 1%; 
     float: right;
+    border-radius: 250px;
 }
 .imagenes{                    
     width: 80%;
