@@ -7,7 +7,7 @@ body{background-color: #5D2A42;
 #textomedio {text-align: center;}
 #textoleft {text-align: left;}
 #map{height: 500px;
-width: 100%;}
+    width: 100%;}
 /* Clases */ 
 .marcas{background-color: orangered; 
     width: 80%; 
@@ -58,9 +58,8 @@ width: 100%;}
     padding-left: 20%;
     
 }
-.imagenes2{
-    width: 55%;
-    height: 55%;
+.banner{
+    width: 70%;
     padding-left: 20%;
 }
 .recomendacion{background-color: #EBE18D; 
@@ -92,17 +91,14 @@ width: 100%;}
     margin-top: 4%;
     margin-bottom: 4%;
     border: 0.3cm; 
-    border-style: outset;
+    border-style: outset; 
     border-color: aqua;
     margin-right: 4%;
     margin-left: 4%;
     padding-top: 1%;
     padding-bottom: 1%;
 }
-.footer{
-    margin-left: 10%;
-    margin-right: 10%;
-}
+
 .link{
     color: brown;
 }
@@ -115,5 +111,4 @@ width: 100%;}
     border-color:red;
 }
 .contenedor2{ background-color: #EBE18D;
-
 }

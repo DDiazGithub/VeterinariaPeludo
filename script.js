@@ -27,3 +27,4 @@ function iniciarmap(){
         map: map
     })
 }
+    
